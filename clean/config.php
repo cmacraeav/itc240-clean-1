@@ -15,13 +15,20 @@ define('THIS_PAGE',basename($_SERVER['PHP_SELF']));
 
 //die;
 
-switch(THIS_PAGE){
-        
+switch(THIS_PAGE){  
+    case 'index.php':
+        $title = 'Home';
+    break;
     case 'template.php':
-        $title = 'Template page.';
+        $title = 'Template';
     break;
     case 'contact.php':
-        $title = 'Contact page.';
+        $title = 'Contact Us';
+    break;
+    case 'about.php':
+        $title = 'About Us';
+    break;
+    case 'sample.php': $title = 'Sample Post';
     break;
     
     default:
