@@ -4,21 +4,17 @@
     
     Stores configuration data for our application
 
-slogan
-subheader
-sitename
-pageheader
 */
 
-// echo basename($_SERVER['PHP_SELF']);
+
+
+ob_start(); //Prevents header errors
+define('DEBUG',TRUE); #we want to see all errors
+
+include 'credentials.php'; //Database credentials
 
 define('THIS_PAGE',basename($_SERVER['PHP_SELF']));
 
-//echo 'the constant is storing: ' . THIS_PAGE;
-
-//die;
-
-//Default page values
 
 $title = THIS_PAGE;
 $sitename = 'Chris\' ITC240 Project';
@@ -46,6 +42,11 @@ switch(THIS_PAGE){
         $pageheader = 'Contact Us!';
         $subheader ='We value your feedback.';
     break;
+    case 'db-test.php':
+        $title = 'A database test page';
+        $pageheader = 'Database Test Page!';
+        $subheader ='Check this page to see if your db credentials are correct..';
+    break;
     case 'about.php':
         $title = 'About Us';
     break;
@@ -53,5 +54,20 @@ switch(THIS_PAGE){
     break;
     
 };
+
+
+function myerror($myFile, $myLine, $errorMsg)
+{
+    if(defined('DEBUG') && DEBUG)
+    {
+       echo "Error in file: <b>" . $myFile . "</b> on line: <b>" . $myLine . "</b><br />";
+       echo "Error Message: <b>" . $errorMsg . "</b><br />";
+       die();
+    }else{
+		echo "I'm sorry, we have encountered an error.  Would you like to buy some socks?";
+		die();
+    }
+}
+
 
 ?>

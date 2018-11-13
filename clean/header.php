@@ -47,6 +47,9 @@
               <li class="nav-item">
               <a class="nav-link" href="daily.php">Daily</a>
             </li>
+              <li class="nav-item">
+              <a class="nav-link" href="db-test.php">DB-Test</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.php">Contact</a>
             </li>
