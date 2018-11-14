@@ -38,17 +38,14 @@
             <li class="nav-item">
               <a class="nav-link" href="index.php">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.php">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="sample.php">Sample Post</a>
-            </li>
               <li class="nav-item">
               <a class="nav-link" href="daily.php">Daily</a>
             </li>
               <li class="nav-item">
               <a class="nav-link" href="db-test.php">DB-Test</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="customer_list.php">Customers</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.php">Contact</a>

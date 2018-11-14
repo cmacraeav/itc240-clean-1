@@ -50,7 +50,13 @@ switch(THIS_PAGE){
     case 'about.php':
         $title = 'About Us';
     break;
-    case 'sample.php': $title = 'Sample Post';
+    case 'customer_list.php':
+        $title = 'A list of customers';
+        $pageheader = 'Our customers';
+        $subheader ='Subheader goes here - make it about celebrities... or something.';
+    break;
+    case 'sample.php': 
+        $title = 'Sample Post';
     break;
     
 };
