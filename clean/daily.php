@@ -23,7 +23,7 @@ if(isset($_GET['day'])){ //If day is passed via GET, show $day's drink
 }; 
 
 
-switch($today){
+    switch($today){
         
     case 'Monday':
         $coffee = 'pumpkin spice latte';

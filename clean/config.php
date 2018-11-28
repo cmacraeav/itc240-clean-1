@@ -55,6 +55,11 @@ switch(THIS_PAGE){
         $pageheader = 'Our customers';
         $subheader ='Subheader goes here - make it about celebrities... or something.';
     break;
+    case 'satellite_list.php':
+        $title = 'Satellite Launches Around The World';
+        $pageheader = 'Satellite launches from around the world.';
+        $subheader ='Find information about select satellite launches from around the world!';
+    break;
     case 'sample.php': 
         $title = 'Sample Post';
     break;
